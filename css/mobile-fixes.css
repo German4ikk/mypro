@@ -1,0 +1,169 @@
+/* Улучшения для узких мобильных экранов (360px) */
+@media screen and (max-width: 380px) {
+    /* Общие стили */
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+    /* Шапка */
+    .top-bar-content .content {
+        margin-right: 10px;
+        font-size: 0.8rem;
+    }
+    
+    .top-bar-content .content i {
+        margin-right: 5px;
+    }
+    
+    /* Меню */
+    .main-nav li {
+        margin-left: 15px;
+    }
+    
+    /* Секции */
+    section {
+        padding: 40px 0;
+    }
+    
+    /* Услуги */
+    .service-card {
+        padding: 15px;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    /* Таймлайн */
+    .timeline-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .timeline-container::after {
+        left: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+    
+    .left::after, .right::after {
+        left: 5px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .timeline-content {
+        padding: 10px 12px;
+    }
+    
+    .timeline-step {
+        font-size: 14px;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+    }
+    
+    /* Форма подписки */
+    .subscribe-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .subscribe-content p {
+        font-size: 0.9rem;
+    }
+    
+    .form-privacy, .contact-form-privacy {
+        font-size: 0.7rem;
+    }
+    
+    /* Контактная форма */
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    /* Футер */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .footer-menu {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Чат-бот */
+    .chatbot-container {
+        width: 300px;
+        right: 10px;
+    }
+    
+    .chatbot-header {
+        padding: 10px;
+    }
+    
+    .chatbot-messages {
+        padding: 10px;
+    }
+    
+    .chatbot-input {
+        padding: 10px;
+    }
+    
+    .chatbot-input input {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .contact-btn {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+    
+    /* Портфолио */
+    .portfolio-filter button {
+        padding: 5px 10px;
+        margin: 0 3px 5px;
+        font-size: 0.8rem;
+    }
+    
+    .portfolio-item {
+        height: 200px;
+    }
+}
+
+/* Исправления для очень узких экранов */
+@media screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+        padding: 0 5px;
+    }
+    
+    .chatbot-container {
+        width: 280px;
+        right: 5px;
+    }
+    
+    .portfolio-filter button {
+        padding: 4px 8px;
+        margin: 0 2px 4px;
+        font-size: 0.75rem;
+    }
+}
