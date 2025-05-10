@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://mypro-avrormira.vercel.app/sitemap.xml
