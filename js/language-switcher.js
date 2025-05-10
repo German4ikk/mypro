@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'contact_message': 'Ваше сообщение',
             'contact_submit': 'Отправить',
             'contact_telegram': 'Заявка будет отправлена в Telegram',
-            'contact_privacy': 'Я согласен с',
+            'contact_privacy': 'согласен с',
             'contact_privacy_link': 'политикой конфиденциальности',
             // Подписка
             'subscribe_title': 'Подпишитесь на наши новости',
