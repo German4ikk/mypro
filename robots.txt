@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://digital-specialist-portfolio.windsurf.build/sitemap.xml
