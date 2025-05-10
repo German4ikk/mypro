@@ -293,6 +293,7 @@ html {
 .subscribe-form .form-group {
     display: flex;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .subscribe-form input[type="email"] {
@@ -307,6 +308,7 @@ html {
     -moz-appearance: none;
     appearance: none;
     transition: all 0.3s ease;
+    min-width: 0; /* Предотвращает переполнение на мобильных устройствах */
 }
 
 .subscribe-form input[type="email"]::placeholder {
@@ -331,6 +333,7 @@ html {
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
+    white-space: nowrap; /* Предотвращает перенос текста кнопки */
 }
 
 .subscribe-form button:hover {
@@ -344,11 +347,16 @@ html {
     opacity: 0.8;
     margin-top: 10px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
+    line-height: 1.4;
 }
 
 .form-privacy input[type="checkbox"] {
     margin-right: 8px;
+    min-width: 18px;
+    min-height: 18px;
+    margin-top: 2px;
     position: relative;
     width: 16px;
     height: 16px;
