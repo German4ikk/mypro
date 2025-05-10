@@ -1,0 +1,143 @@
+/* Стили для Google Translate */
+#google_translate_element {
+    margin-left: 15px;
+}
+
+/* Стилизация выпадающего списка */
+.goog-te-gadget {
+    font-family: inherit !important;
+    font-size: 14px !important;
+    color: #fff !important;
+}
+
+.goog-te-gadget-simple {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 5px !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: color 0.3s ease;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value:hover {
+    color: #fff !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span {
+    border-left: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding-left: 5px !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span:first-child {
+    border-left: none !important;
+    padding-left: 0 !important;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    #google_translate_element {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    
+    .goog-te-gadget {
+        font-size: 12px !important;
+    }
+}
+
+/* Исправление проблем с чекбоксами */
+.translated-ltr input[type="checkbox"],
+.translated-rtl input[type="checkbox"] {
+    opacity: 1 !important;
+    position: static !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* Исправление сдвига контента */
+html.translated-ltr,
+html.translated-rtl {
+    position: static !important;
+    top: 0 !important;
+    margin-top: 0 !important;
+    height: auto !important;
+}
+
+body.translated-ltr,
+body.translated-rtl {
+    top: 0 !important;
+    position: static !important;
+}
+
+/* Скрытие верхней панели Google Translate */
+.skiptranslate {
+    display: none !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+/* Исправление для выпадающего меню */
+.goog-te-menu-frame {
+    box-shadow: 0 0 8px rgba(0,0,0,0.2) !important;
+    border-radius: 4px !important;
+}
+
+/* Скрытие Google атрибуции */
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+#goog-gt-tt, .goog-te-balloon-frame {
+    display: none !important;
+}
+
+.goog-text-highlight {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+/* Исправление для верхней панели Google Translate */
+body {
+    top: 0 !important;
+}
+
+/* Стили для всплывающего меню */
+.goog-te-menu-frame {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.goog-te-menu2 {
+    border-radius: 4px !important;
+    padding: 5px !important;
+}
+
+.goog-te-menu2-item div {
+    padding: 6px 8px !important;
+}
+
+.goog-te-menu2-item:hover {
+    background-color: #f5f5f5 !important;
+}
+
+/* Скрытие Google панели после перевода */
+.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
+}

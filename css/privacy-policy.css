@@ -1,0 +1,187 @@
+/* Стили для страницы политики конфиденциальности */
+.privacy-policy-section {
+    padding: 200px 0 80px;
+    background-color: var(--light-color, #f9f9f9);
+    position: relative;
+    margin-top: 0;
+}
+
+.privacy-policy-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.9), rgba(var(--primary-color-rgb), 0.7));
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    z-index: 0;
+}
+
+/* Стили для фиксированной шапки */
+.privacy-page #site-header-wrap {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-policy-section h1 {
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.privacy-content {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15), 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.privacy-content h2 {
+    color: var(--primary-color);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.privacy-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #222;
+    font-weight: 500;
+}
+
+.privacy-content ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.privacy-content ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #222;
+    font-weight: 500;
+}
+
+.back-to-home {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Дополнительные улучшения для контраста */
+.privacy-content strong {
+    color: #111;
+    font-weight: 600;
+}
+
+.privacy-content a {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.privacy-content a:hover {
+    color: #0a3d82;
+}
+
+/* Улучшение читаемости */
+.privacy-content {
+    background-image: linear-gradient(to bottom, #fff, #f9f9f9);
+}
+
+.back-to-home .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.back-to-home .btn:hover {
+    background-color: #0a3d82;
+}
+
+/* Адаптивность */
+@media (max-width: 991px) {
+    .privacy-policy-section {
+        padding-top: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .privacy-content {
+        padding: 25px;
+    }
+    
+    .privacy-policy-section {
+        padding: 220px 0 50px;
+    }
+    
+    .privacy-policy-section h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .privacy-policy-section {
+        padding-top: 200px;
+    }
+    
+    .privacy-content {
+        padding: 20px 15px;
+    }
+    
+    .privacy-policy-section h1 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+}
+
+/* Стили для чекбокса согласия с политикой конфиденциальности */
+.form-privacy {
+    margin: 15px 0;
+}
+
+.form-privacy label {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.form-privacy input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary-color);
+}
+
+.form-privacy a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.form-privacy a:hover {
+    color: #0a3d82;
+}
