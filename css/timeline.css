@@ -1,12 +1,13 @@
 /* Стили для таймлайна процесса работы */
 .timeline-section {
-    padding: 80px 0;
+    padding: 60px 0;
     position: relative;
 }
 
 .timeline-section h2 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-size: 28px;
 }
 
 .timeline-container {
@@ -137,6 +138,15 @@
 }
 
 @media screen and (max-width: 768px) {
+    .timeline-section {
+        padding: 40px 0;
+    }
+    
+    .timeline-section h2 {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+    
     .timeline-container::after {
         left: 31px;
     }
@@ -145,23 +155,78 @@
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
-    }
-    
-    .timeline-item::after {
-        left: 18px;
-        top: 15px;
-    }
-    
-    .left::after, .right::after {
-        left: 18px;
-    }
-    
-    .left .timeline-content::after, .right .timeline-content::after {
-        left: -20px;
-        border-color: transparent white transparent transparent;
+        margin-bottom: 20px;
     }
     
     .right {
         left: 0;
+    }
+    
+    .left::after, .right::after {
+        left: 18px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .left .timeline-content::after, .right .timeline-content::after {
+        border-color: transparent white transparent transparent;
+        left: -20px;
+        right: auto;
+    }
+    
+    .timeline-content {
+        padding: 15px 20px;
+    }
+    
+    .timeline-step {
+        font-size: 18px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
+    
+    .timeline-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .timeline-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .timeline-section {
+        padding: 30px 0;
+    }
+    
+    .timeline-section h2 {
+        font-size: 22px;
+    }
+    
+    .timeline-container::after {
+        left: 21px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+        padding-right: 15px;
+    }
+    
+    .left::after, .right::after {
+        left: 8px;
+        width: 18px;
+        height: 18px;
+    }
+    
+    .timeline-content {
+        padding: 12px 15px;
+    }
+    
+    .timeline-step {
+        font-size: 16px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
     }
 }
