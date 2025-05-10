@@ -1,0 +1,117 @@
+/* Медиа-запросы для формы подписки */
+@media screen and (max-width: 768px) {
+    .subscribe-section {
+        padding: 40px 0;
+    }
+    
+    .subscribe-wrapper {
+        padding: 20px 15px;
+    }
+    
+    .subscribe-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .subscribe-content p {
+        font-size: 1rem;
+    }
+    
+    .subscribe-form .form-group {
+        flex-direction: column;
+    }
+    
+    .subscribe-form input[type="email"] {
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .subscribe-form button {
+        border-radius: 0 0 5px 5px;
+        width: 100%;
+    }
+    
+    .form-privacy {
+        font-size: 0.8rem;
+        margin-top: 15px;
+    }
+    
+    .form-privacy label {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .form-privacy input[type="checkbox"] {
+        margin-top: 3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .subscribe-section {
+        padding: 30px 0;
+    }
+    
+    .subscribe-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-privacy {
+        font-size: 0.75rem;
+    }
+}
+
+/* Улучшенные стили для чекбоксов во всех формах */
+.form-privacy input[type="checkbox"],
+.contact-form-privacy input[type="checkbox"],
+.form-group input[type="checkbox"] {
+    min-width: 20px;
+    min-height: 20px;
+    margin-top: 2px;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid var(--primary-color);
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all 0.3s ease;
+}
+
+.form-privacy input[type="checkbox"]:checked,
+.contact-form-privacy input[type="checkbox"]:checked,
+.form-group input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+}
+
+.form-privacy input[type="checkbox"]:checked::before,
+.contact-form-privacy input[type="checkbox"]:checked::before,
+.form-group input[type="checkbox"]:checked::before {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+}
+
+.form-privacy label,
+.contact-form-privacy label {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+    text-align: left;
+}
+
+/* Стили для политики конфиденциальности в формах */
+.form-privacy a,
+.contact-form-privacy a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    margin-left: 4px;
+}
+
+.form-privacy a:hover,
+.contact-form-privacy a:hover {
+    text-decoration: none;
+}
